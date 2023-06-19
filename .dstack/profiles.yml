@@ -1,0 +1,6 @@
+profiles:
+  - name: small_test
+    project: aws_test
+    resources:
+       memory: 8GB
+    default: true
