@@ -2,7 +2,18 @@
 
 This repo contains a simple test example in `processor.py` employing [dstack.ai](https://github.com/dstackai/dstack) for a speech-to-text translation task using a few example videos (in `/test_data/input_data`).
 
+To run this example a `./dstack/profile.yaml` file must be defined as described in the [dstack documentation](https://dstack.ai/docs/reference/profiles.yml/).
 
+For the test run here a very small CPU only machine on AWS was used via the following `profile.yaml` template:
+
+```yaml
+profiles:
+  - name: small_test
+    project: aws_test
+    resources:
+       memory: 8GB
+    default: true
+```
 
 ## Example overview
 
