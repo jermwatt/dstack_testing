@@ -13,6 +13,10 @@ output_data_path = test_data_path + '/output_data'
 audio_directory = '/audio_files'
 if not os.path.exists(audio_directory):
     os.makedirs(audio_directory)
+    
+# create output directory if it doesn't exist
+if not os.path.exists(output_data_path):
+    os.makedirs(output_data_path)
 
 # create pipeline
 pipe = pipeline(model="openai/whisper-base", device_map="auto")
