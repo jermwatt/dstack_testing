@@ -1,4 +1,8 @@
 type: dev-environment
 setup:
+  - apt-get update
+  - apt-get install -y build-essential
+  - pip install --upgrade pip setuptools
+  - apt-get install -y ffmpeg
   - pip install -r requirements.txt
 ide: vscode

@@ -1,0 +1,2 @@
+# dstack.ai + whisper example
+
